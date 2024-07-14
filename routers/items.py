@@ -84,7 +84,7 @@ def validate_input_data(
 
     # Determine the proxy URL based on the proxy type
     if proxy_type == "auto":
-        proxy_url = FreeProxy().get()
+        proxy_url = FreeProxy(https=True).get()
     elif proxy_type == "manual":
         proxy_url = data.get("proxy_url")
         if not proxy_url:

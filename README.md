@@ -7,6 +7,11 @@
    - `pip-compile --resolver=backtracking requirements.in`
 4. `pip install -r requirements.txt`
 
+## Run the Repository
+```bash
+fastapi dev main.py
+```
+
 ## Folder structure
 ```md
 .
